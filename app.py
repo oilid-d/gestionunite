@@ -27,7 +27,7 @@ def login_form():
                 st.rerun()
             else:
                 st.error('Invalid username, password, or role.')
-    st.info("Demo accounts:\nChief: chief / chief123\nATSEP: john / atsep123\nClient: airport1 / client123\nSelect the correct role for your username.")
+    #st.info("Demo accounts:\nChief: chief / chief123\nATSEP: john / atsep123\nClient: airport1 / client123\nSelect the correct role for your username.")
 
 def logout():
     if st.button('Logout', key='logout_btn'):
