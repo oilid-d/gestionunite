@@ -15,7 +15,7 @@ def login_form():
             user_key = username.strip() + role_suffix[role]
             users = {
                 'chief-CHIEF': {'password': 'chief123', 'role': 'Chief of Unit', 'avatar': 'https://i.imgur.com/1Q9Z1Zm.png'},
-                'john-ATSEP': {'password': 'atsep123', 'role': 'ATSEP', 'avatar': 'https://i.imgur.com/2z6b7Yk.png'},
+                'houcine-ATSEP': {'password': 'atsep123', 'role': 'ATSEP', 'avatar': 'https://i.imgur.com/2z6b7Yk.png'},
                 'airport1-CLIENT': {'password': 'client123', 'role': 'Client', 'avatar': 'https://i.imgur.com/3y6b7Yk.png'},
             }
             user = users.get(user_key)
@@ -27,7 +27,7 @@ def login_form():
                 st.rerun()
             else:
                 st.error('Invalid username, password, or role.')
-    #st.info("Demo accounts:\nChief: chief / chief123\nATSEP: john / atsep123\nClient: airport1 / client123\nSelect the correct role for your username.")
+    #st.info("Demo accounts:\nChief: chief / chief123\nATSEP: houcine / atsep123\nClient: airport1 / client123\nSelect the correct role for your username.")
 
 def logout():
     if st.button('Logout', key='logout_btn'):
@@ -410,7 +410,7 @@ def chief_drone_maintenance():
     # Initialize shared maintenance records if not exists
     if 'shared_maintenance_records' not in st.session_state:
         st.session_state['shared_maintenance_records'] = [
-            {'drone_id': 'D001', 'date': '2025-05-10', 'type': 'Calibration', 'desc': 'Annual calibration', 'tech': 'John', 'parts': '', 'timestamp': '2025-05-10 10:00:00'},
+            {'drone_id': 'D001', 'date': '2025-05-10', 'type': 'Calibration', 'desc': 'Annual calibration', 'tech': 'houcine', 'parts': '', 'timestamp': '2025-05-10 10:00:00'},
             {'drone_id': 'D002', 'date': '2025-04-15', 'type': 'Repair', 'desc': 'Motor replaced', 'tech': 'Alice', 'parts': 'Motor', 'timestamp': '2025-04-15 14:30:00'},
         ]
     
@@ -1029,7 +1029,7 @@ def atsep_drone_maintenance():
     # Initialize shared maintenance records in session state if not exists
     if 'shared_maintenance_records' not in st.session_state:
         st.session_state['shared_maintenance_records'] = [
-            {'drone_id': 'D001', 'date': '2025-05-10', 'type': 'Calibration', 'desc': 'Annual calibration', 'tech': 'John', 'parts': '', 'timestamp': '2025-05-10 10:00:00'},
+            {'drone_id': 'D001', 'date': '2025-05-10', 'type': 'Calibration', 'desc': 'Annual calibration', 'tech': 'houcine', 'parts': '', 'timestamp': '2025-05-10 10:00:00'},
             {'drone_id': 'D002', 'date': '2025-04-15', 'type': 'Repair', 'desc': 'Motor replaced', 'tech': 'Alice', 'parts': 'Motor', 'timestamp': '2025-04-15 14:30:00'},
         ]
     
