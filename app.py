@@ -326,10 +326,10 @@ def chief_mission_management():
         st.session_state['missions'] = [
             {'ref': 'M001', 'airport': 'JFK', 'date_start': '2025-05-01', 'date_finish': '2025-05-03', 
              'duration': '2d', 'problem': 'Radar issue', 'status': 'En cours', 'assignment': 'New',
-             'groupchief': 'Alice', 'pilote': 'Bob', 'data_analyst': 'Carol'},
+             'groupchief': 'houcine', 'pilote': 'ahmed', 'data_analyst': 'sara'},
             {'ref': 'M002', 'airport': 'LAX', 'date_start': '2025-04-20', 'date_finish': '2025-04-22', 
              'duration': '2d', 'problem': 'Comms check', 'status': 'Done', 'assignment': 'Accepted',
-             'groupchief': 'Dan', 'pilote': 'Eve', 'data_analyst': 'Frank'},
+             'groupchief': 'hassan', 'pilote': 'jamal', 'data_analyst': 'salma'},
         ]
     
     if st.button('Create Mission', key='show_create_mission_btn'):
@@ -411,7 +411,7 @@ def chief_drone_maintenance():
     if 'shared_maintenance_records' not in st.session_state:
         st.session_state['shared_maintenance_records'] = [
             {'drone_id': 'D001', 'date': '2025-05-10', 'type': 'Calibration', 'desc': 'Annual calibration', 'tech': 'houcine', 'parts': '', 'timestamp': '2025-05-10 10:00:00'},
-            {'drone_id': 'D002', 'date': '2025-04-15', 'type': 'Repair', 'desc': 'Motor replaced', 'tech': 'Alice', 'parts': 'Motor', 'timestamp': '2025-04-15 14:30:00'},
+            {'drone_id': 'D002', 'date': '2025-04-15', 'type': 'Repair', 'desc': 'Motor replaced', 'tech': 'houcine', 'parts': 'Motor', 'timestamp': '2025-04-15 14:30:00'},
         ]
     
     maintenance_records = st.session_state['shared_maintenance_records']
@@ -753,9 +753,9 @@ def chief_users_management():
     # Initialize users in session state if not exists
     if 'users_list' not in st.session_state:
         st.session_state['users_list'] = [
-            {'name': 'Alice Smith', 'role': 'Group Chief', 'email': 'alice@example.com', 'status': 'Active', 'username': 'alice', 'password': 'chief123'},
-            {'name': 'Bob Jones', 'role': 'Pilot', 'email': 'bob@example.com', 'status': 'Active', 'username': 'bob', 'password': 'pilot123'},
-            {'name': 'Carol Wilson', 'role': 'Data Analyst', 'email': 'carol@example.com', 'status': 'Inactive', 'username': 'carol', 'password': 'analyst123'},
+            {'name': 'houcine fath', 'role': 'Group Chief', 'email': 'houcine@example.com', 'status': 'Active', 'username': 'houcine', 'password': 'chief123'},
+            {'name': 'jamal Jon', 'role': 'Pilot', 'email': 'jam@example.com', 'status': 'Active', 'username': 'jamal', 'password': 'pilot123'},
+            {'name': 'sara walo', 'role': 'Data Analyst', 'email': 'sara@example.com', 'status': 'Inactive', 'username': 'sara', 'password': 'analyst123'},
         ]
     
     # Add/Edit User Form at the top
@@ -1030,7 +1030,7 @@ def atsep_drone_maintenance():
     if 'shared_maintenance_records' not in st.session_state:
         st.session_state['shared_maintenance_records'] = [
             {'drone_id': 'D001', 'date': '2025-05-10', 'type': 'Calibration', 'desc': 'Annual calibration', 'tech': 'houcine', 'parts': '', 'timestamp': '2025-05-10 10:00:00'},
-            {'drone_id': 'D002', 'date': '2025-04-15', 'type': 'Repair', 'desc': 'Motor replaced', 'tech': 'Alice', 'parts': 'Motor', 'timestamp': '2025-04-15 14:30:00'},
+            {'drone_id': 'D002', 'date': '2025-04-15', 'type': 'Repair', 'desc': 'Motor replaced', 'tech': 'houcine', 'parts': 'Motor', 'timestamp': '2025-04-15 14:30:00'},
         ]
     
     # Add Maintenance Record button
